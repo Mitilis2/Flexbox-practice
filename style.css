@@ -1,3 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
 body {
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
   background-color: beige;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.lrn-btn,
+.adpt-btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.25em 1em;
+  color: #fff;
+  font-size: 0.925rem;
+  border-radius: 100vw;
+  background-color: cadetblue;
+}
+.lrn-btn:hover,
+.adpt-btn:hover,
+.lrn-btn:focus,
+.adpt-btn:focus {
+  background-color: hsl(223, 92%, 10%);
+}
+.profile-card {
+  max-width: 45rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .profile-card {
+    flex-direction: row;
+  }
+}
+
+.card__header,
+.card__body {
+  padding: 2rem;
+}
+
+.card__header {
+  background-image: url("../img/flexible-joe.jpg");
+  background-color: lightskyblue;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: cover;
+  color: #fff;
+  flex-basis: 18rem;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
