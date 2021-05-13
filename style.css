@@ -63,18 +63,18 @@ select {
 }
 
 @media (min-width: 40em) {
-  .profile-card {
+  .card {
     flex-direction: row;
   }
 }
 
-.card__header,
-.card__body {
+.header,
+.body {
   padding: 2rem;
 }
 
-.card__header {
-  background-image: url("../img/flexible-joe.jpg");
+.header {
+  background-image: url("/img/shayne.jpg");
   background-color: lightskyblue;
   background-blend-mode: overlay;
   background-size: cover;
